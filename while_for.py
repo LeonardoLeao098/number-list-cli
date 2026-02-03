@@ -30,7 +30,7 @@ def listar():
 
 def remover():
     if not numeros:
-        print('A lista está vazia. Nada para rmemover')
+        print('A lista está vazia. Nada para remover')
         return
 
     listar()
