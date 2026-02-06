@@ -1,11 +1,12 @@
 # Gerenciador de Números em Python
 
-Projeto simples em Python que permite adicionar, listar e remover números de uma lista através de um menu interativo no terminal.
+Projeto simples em Python que permite adicionar, listar e remover e analisar números de uma lista através de um menu interativo no terminal.
 
 ## Funcionalidades
 - Adicionar números à lista
 - Listar todos os números adicionados
 - Remover um número pela posição
+- Ver as estatísticas (total de números, soma dos valores e média)
 - Validação de entrada para evitar valores inválidos
 - Menu em loop até o usuário encerrar o programa
 
