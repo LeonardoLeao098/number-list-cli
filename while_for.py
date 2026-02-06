@@ -1,3 +1,4 @@
+import os
 numeros = []
 
 def ler_opcao():
@@ -46,15 +47,25 @@ def remover():
                 print('Posição inválida!')
         except ValueError:
             print('Digite apenas números!')
+    
+def estatisticas():
+    if not numeros:
+        print('A lista está vazia.')
+    else:
+        print(f'Total de números: {len(numeros)}')
+        print(f'Soma dos números: {sum(numeros)}')
+        print(f'Média dos números: {sum(numeros) / len(numeros):.2f}')
                         
 
 def encerrar():
+    os.system('cls')
     print('Encerrando...')
      
 while True:
     print('\n1 - Adicionar número')
     print('2 - Listar números')
     print('3 - Remover número')
+    print('4 - Estatísticas da lista')
     print('0 - Sair\n')
 
     escolha = ler_opcao()
@@ -65,6 +76,8 @@ while True:
         listar()
     elif escolha == 3:
         remover()
+    elif escolha == 4:
+        estatisticas()
     elif escolha == 0:
         encerrar()
         break
